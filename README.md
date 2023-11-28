@@ -45,7 +45,7 @@ Most common tags used to describe movies:
 ![Alt text](images/common_tags.png)
 
 Most common movie genres:
-![Alt text](images/common_genre.png)
+![Alt text](images/common_genres.png)
 
 Ratings distribution:
 ![Alt text](images/ratings_distribution.png)
@@ -56,31 +56,47 @@ Ratings distribution:
 The primary analysis work can be found in the jupityer notebook 'data_analysis.ipynb'
 
 #### Data Cleaning: 
-    - remove un necessary columns from the MovieLens DataFrames
+Not much data cleaning was necessary, there were no null values in the dataset, as it was a pre-filtered and currated dataset. The only clenaing performed was to remove unnecessary columns from the individual csv files, primarily the timestamp columns.
 
 #### Data Analysis: 
 
-##### Base Model: 
-do I have a base model and do I need amodel
+Several models were built in order to find the model with the highest accuracy, including several K-Nearest Neighbor (KNN) algorithms and Singular Value Decomposition (SVD)
 
 ##### KNN Methods:
+Three K-Nearest Neighbor methodes were tested.
+1. KNN Basic
+2. KNN Baseline
+3. KNN with Means
+
+Two parameters were varied for each method
+1. pearson vs cosine similarity score
+2. user-user vs item-item comparrision
+
+This resulted in 12 total models. 
+
+Each model was run and evaluated to determine it's error scores. Both the root mean squared error (rmse) and mean absolute error (mae) were calcualted for each model, with the rmse used as the decison metric for determining the final model, due to the assumption of a normal (gaussian) error.
 
 ##### SVD Grid Search:
 The ranges of values selected for each parameter during hyperparamter tuning were permutated to produce all possible combinations of parameters to search for the combination that produces the highest possible precision. 
 
-##### Final Decision Tree:
-The optimal paramters were used to generate a final decision tree, resulting in a precision of 80.1%
+#### Final Model: SVD with optimal parameters
+The SVD Grid search optimal paramters produced the lowest RMSE error of 0.869
+    - n_factors = 80
+    - reg_all = 0.05
+    - n_epochs = 10
+    - lr_all = 0.01
 
-#### Final Model
+### Recommendation Strategies
 
-##### Singular Value Decomposition:
+1. Current User: Recommend movies similar to ones they have rated highly and   
+2. New User: Prompt them to give 3 key words, then recommend top movies containing those 3 words
+3. Mystery User: If no key words are given, recommend the top 5 highest rated movies
 
-
-### Recommendations
-
-1.  
-2. 
-3. 
+## Conclustion
+Recommending movies to users will that they will enjoy will increase the value of our streaming service by:
+1. Keeping current users hooked
+2. Attracting new users 
+3. Helping to identify new movies to add
 
 
 ### Repository Structure
