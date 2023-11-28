@@ -88,11 +88,14 @@ The SVD Grid search optimal paramters produced the lowest RMSE error of 0.869
 
 ### Recommendation Strategies
 
-1. Current User: Recommend movies similar to ones they have rated highly and   
-2. New User: Prompt them to give 3 key words, then recommend top movies containing those 3 words
+1. Current User: Recommend movies similar to ones they have rated highly and fit their top tags and genres   
+2. New User: Prompt to give 3 key words, then recommend top movies containing those 3 words
 3. Mystery User: If no key words are given, recommend the top 5 highest rated movies
 
-## Conclustion
+#### Top 10 Most rated movies
+![Alt text](images/top_movies.png)
+
+## Conclusion
 Recommending movies to users will that they will enjoy will increase the value of our streaming service by:
 1. Keeping current users hooked
 2. Attracting new users 
@@ -100,10 +103,10 @@ Recommending movies to users will that they will enjoy will increase the value o
 
 
 ### Repository Structure
-images Folder: images used in this ReadMe
-data Folder: contains the original MovieLens data set .
-pdfs Folder: contains the pdfs turned in as part of this project, including the presentation
-data_analysis.ipynb: the jupyter notebook containing the primary analyses
+    - images Folder: images used in this ReadMe
+    - data Folder: contains the original MovieLens data set .
+    - pdfs Folder: contains the pdfs turned in as part of this project, including the presentation
+    - data_analysis.ipynb: the jupyter notebook containing the primary analyses
 
 
 ### Contact Information
