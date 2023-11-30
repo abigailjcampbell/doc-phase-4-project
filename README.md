@@ -79,14 +79,14 @@ This resulted in 12 total models.
 
 Each model was run and evaluated to determine it's error scores. Both the root mean squared error (rmse) and mean absolute error (mae) were calcualted for each model, with the rmse used as the decison metric for determining the final model, due to the assumption of a normal (gaussian) error.
 
-The following table indicates the performance for each model.
+#### The following table indicates the performance for each model.
 ![Alt text](images/knn_performance.png)
 
 ##### SVD Grid Search:
 The ranges of values selected for each parameter during hyperparamter tuning were permutated to produce all possible combinations of parameters to search for the combination that produces the highest possible precision. 
 
-The following table indicates optimal parameters tuned to both RMSE and MAE.
-![Alt text](images/SVD_performance.png)
+#### The following table indicates optimal parameters tuned to both RMSE and MAE.
+![Alt text](images/svd_performance.png)
 
 #### Final Model: SVD with optimal parameters
 The SVD Grid search optimal paramters produced the lowest RMSE error of 0.869
