@@ -41,15 +41,15 @@ The data are contained in the files:
 
 ### Data Overview
 
-Most common tags used to describe movies:
+#### Most common tags used to describe movies:
 ![Alt text](images/common_tags.png)
 There is a diverse set of common tags, that indicate that there is a wide range of movies that will appeal to many movie preferences.
 
-Most common movie genres:
+#### Most common movie genres:
 ![Alt text](images/common_genres.png)
 Drama and comedy are the most common genres.
 
-Ratings distribution:
+#### Ratings distribution:
 ![Alt text](images/ratings_distribution.png)
 The users in this dataset tend to be generous in their ratings, with higher numbers of ratings in the range of 3-5 than 1-2.  
 
